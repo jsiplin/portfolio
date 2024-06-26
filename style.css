@@ -4,7 +4,23 @@ h2{color:rgb(0, 102, 204)}
 hr{ height: 5px;
     background-color: rgb(90, 90, 90);}
 
+div {
+    padding: 10pt;
+    position: ;
+}
 
+.skills {
+    display: flex;
+}
+
+.skills > * {
+    width: calc(100%/3);
+    padding: 1rem;
+}
+
+.skills > div > li{
+    list-style: none;
+}
 
 
 .footer{text-align: center;
