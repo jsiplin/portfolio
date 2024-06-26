@@ -6,12 +6,17 @@ hr{ height: 5px;
 
 div {
     padding: 10pt;
-    position: ;
+    background-color: blueviolet;
+}
+
+.co1 {
+    order: 3;
 }
 
 .skills {
     display: flex;
 }
+
 
 .skills > * {
     width: calc(100%/3);
