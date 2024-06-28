@@ -41,17 +41,44 @@
 
     .flavgrid-container {
         display: grid;
-        grid-template-columns: repeat(3,15%);
-        grid-auto-rows: 75px;
+        height: 75vh;
+        grid-template-columns: repeat(3,auto);
+        grid-auto-rows: auto;
         gap: 5rem;
     }
 
+    .flavgrid {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .flavgrid img{
+        dislay:flex;
         width: 100px;
         height: 100px;
         display: grid;
-        flex-direction: column;
         border: 5px dashed #2A629A;
+    }
+
+    .topleft {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    
+     }
+
+     .topleft img{
+        dislay:flex;
+        width: 400px;
+        height: 400px;
+        display: grid;
+        border: 5px dashed #2A629A;
+    }
+
+    .topleft p {
+        font-size: xx-large; 
     }
 </style>
 
@@ -96,29 +123,29 @@
         </ol>
     <h2>Vote on a flavor Request</h2>
     <div class="flavgrid-container">
-        <div class="flavgrid">
-        Original
+        <div class="flavgrid topleft">
+        <p>Original</p>
         <img src="https://ogdelray.com/wp-content/uploads/2018/03/THE-OG-300x281.png">
         </div>
         <div class="flavgrid">
-        Raspberry
+        <p>Raspberry</p>
         <img src="https://cdn.shopify.com/s/files/1/0059/8835/2052/files/Heritage_Raspberry_1_FGT_af269c43-b789-4585-a33c-6a9e5fb52548.jpg">
         </div>
         <div class="flavgrid">
-        Blue Lemon 
+        <p>Blueberry Lemon</p> 
         <img src="https://www.wholesalesuppliesplus.com/cdn-cgi/image/format=auto/https://www.wholesalesuppliesplus.com/Images/Products/9674-Crafters-Choice-Blueberry-Lemon-Verbena-Fragrance-Oil.jpg"> 
         </div>
         <div class="flavgrid">
-        Honey Ginger
+        <p>Honey Ginger</p>
         <img src="https://hormonesbalance.com/wp-content/uploads/2020/04/Ginger-Licorice-Infused-Honey-Main-Image-4-1.jpg">
         </div>
         <div class="flavgrid">
-            You pick!
-            <img src="https://www.insidehook.com/wp-content/uploads/2021/06/Punctuation.jpg?fit=1500%2C1000">
+        <p>You pick!</p>
+        <img src="https://www.insidehook.com/wp-content/uploads/2021/06/Punctuation.jpg?fit=1500%2C1000">
         </div>
         <div class="flavgrid">
-            Pick Another!
-            <img src="https://www.insidehook.com/wp-content/uploads/2021/06/Punctuation.jpg?fit=1500%2C1000">
+        <p>You Pick Another!</p>
+        <img src="https://www.insidehook.com/wp-content/uploads/2021/06/Punctuation.jpg?fit=1500%2C1000">
         </div>
     </div>
 
