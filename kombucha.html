@@ -39,7 +39,19 @@
       }
     }
 
+    .flavgrid-container {
+        display: grid;
+        grid-template-columns: 15% 15%;
+        gap: 5rem;
+    }
 
+    .flavgrid img{
+        width: 100px;
+        height: 100px;
+        display: grid;
+        flex-direction: column;
+        border: 5px dashed #2A629A;
+    }
 </style>
 
 
@@ -70,9 +82,37 @@
     </ul>
     <h1>Flavors!</h1>
     <h2>Current Flavors</h2>
+    <ol>
+        <li>None Voting Opening Soon</li>
+    </ol>
     <h2>Past Flavors</h2>
+        <ol>
+            <li>Listed after first batch</li>
+        </ol>
     <h2>Favorite Flavors</h2>
-    <h2>Submit a flavor Request</h2>
+        <ol>
+            <li>After first batch and Voting sheet distributed</li>
+        </ol>
+    <h2>Vote on a flavor Request</h2>
+    <div class="flavgrid-container">
+        <div class="flavgrid">
+        Original
+        <img src="https://ogdelray.com/wp-content/uploads/2018/03/THE-OG-300x281.png">
+        </div>
+        <div class="flavgrid">
+        Raspberry
+        <img src="https://cdn.shopify.com/s/files/1/0059/8835/2052/files/Heritage_Raspberry_1_FGT_af269c43-b789-4585-a33c-6a9e5fb52548.jpg">
+        </div>
+        <div class="flavgrid">
+        Blueberry Lemon 
+        <img src="https://www.wholesalesuppliesplus.com/cdn-cgi/image/format=auto/https://www.wholesalesuppliesplus.com/Images/Products/9674-Crafters-Choice-Blueberry-Lemon-Verbena-Fragrance-Oil.jpg"> 
+        </div>
+        <div class="flavgrid">
+        Honey Ginger
+        <img src="https://hormonesbalance.com/wp-content/uploads/2020/04/Ginger-Licorice-Infused-Honey-Main-Image-4-1.jpg">
+        </div>
+    </div>
+
     
 </body>
 </html>
