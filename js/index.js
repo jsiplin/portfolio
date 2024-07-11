@@ -3,7 +3,7 @@ datesetup()
 
 document.querySelector("body > div.alert.alert-info").innerText = "Today is "+dumpwday+" "+dumpmonth+" "+dumpday+", "+dumpyear+"\n"+dumptime+" and we are now powered by JavaScript!\n";
 document.querySelector("body > button.btn.btn-primary").addEventListener("click",function() {
-	var chimessound = new Audio("/sounds/Chimes.mp3");
+	var chimessound = new Audio("./sounds/Chimes.mp3");
 	chimessound.play();
 	alert("Link Uptop in Menu 'Kombucha Project 2024'");
 })
