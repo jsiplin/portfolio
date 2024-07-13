@@ -9,14 +9,18 @@
   <link rel="icon" type="image/x-icon" href="./media/icons/favicon.ico">
   <link rel="icon" type="image/png" href="./media/icons/favicon-32x32.png" sizes="32x32">
   <link rel="apple-touch-icon" sizes="180x180" href="./media/icons/apple-touch-icon.png">
-
-
-
-
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <style>
+    .flex-art-container{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    .gong {
+      padding: 10px;
+    }
   </style>
 </head>
 
@@ -62,8 +66,9 @@
   <div class="alert alert-info" role="alert">
     Java Script Date
   </div>
+ 
   <div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold text-body-emphasis">Kombucha<br>with side of IT</h1>
+        <h1 class="display-4 fw-bold text-body-emphasis">Kombucha<br>with side of IT</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">Welcome to this hybrid website, where we focus on making great bouch, providing IT services, practicing coding
         and including everyone with an interest. This site is a startup, but with our love of kombucha and learning we will be adding 
@@ -139,7 +144,14 @@
       </div>
     </div>
   </div>
-  <h1>Kombucha Art Carousel</h1>
+
+  <div class="flex-art-container">
+    <div><img class="gong" height=100 src="media/bouch/gongpic.png"></div>
+    <div><h1>Kombucha Art Carousel</h1></div>
+    <div><img class="gong" height=100 src="media/bouch/gongpic.png"></div>
+
+  </div>
+
   <div class="container">
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
