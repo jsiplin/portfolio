@@ -8,7 +8,18 @@ document.querySelector("body > button.btn.btn-primary").addEventListener("click"
 	alert("Link Uptop in Menu 'Kombucha Project 2024'");
 })
 
-//window.location.href = "http://www.w3schools.com";
+
+// Bang a gong in Art Section
+document.querySelector("body > div.flex-art-container > div:nth-child(1) > img").addEventListener(
+	"click", gongit)
+document.querySelector("body > div.flex-art-container > div:nth-child(3) > img").addEventListener(
+		"click", gongit)
+
+function gongit() {
+	var gongsound = new Audio("media/sounds/zildjian_gong.mp3");
+	gongsound.play();
+}
+
 
 function datesetup(){
 	var datedump = Date().split(" ");
