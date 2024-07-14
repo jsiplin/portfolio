@@ -1,4 +1,22 @@
 // Must be run before adding date//
+
+// Set to Light or dark
+document.querySelector("body > button.btn.btn-light").addEventListener("click",setlight)
+document.querySelector("body > button.btn.btn-dark").addEventListener("click",setdark)
+
+
+function setlight() {
+	document.querySelector("html").setAttribute("data-bs-theme","light")
+}
+
+function setdark() {
+	document.querySelector("html").setAttribute("data-bs-theme","dark")
+}
+
+
+
+
+
 datesetup()
 
 document.querySelector("body > div.alert.alert-info").innerText = "Today is "+dumpwday+" "+dumpmonth+" "+dumpday+", "+dumpyear+"\n"+dumptime+" and we are now powered by JavaScript!\n";
@@ -7,6 +25,7 @@ document.querySelector("body > button.btn.btn-primary").addEventListener("click"
 	chimessound.play();
 	alert("Link Uptop in Menu 'Kombucha Project 2024'");
 })
+
 
 
 // Bang a gong in Art Section
