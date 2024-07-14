@@ -6,12 +6,14 @@ document.querySelector("body > button.btn.btn-dark").addEventListener("click",se
 
 
 function setlight() {
-	document.querySelector("html").setAttribute("data-bs-theme","light")
+	document.querySelector("html").setAttribute("data-bs-theme","light");
+	var yoda = new Audio("media/sounds/yodafeeltheforce.mp3");
+	yoda.play();
 }
 
 function setdark() {
 	document.querySelector("html").setAttribute("data-bs-theme","dark");
-	var vader = new Audio("media/sound/darkside.mp3");
+	var vader = new Audio("media/sounds/darkside.mp3");
 	vader.play();
 }
 
