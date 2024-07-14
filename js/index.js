@@ -70,43 +70,41 @@ fixmonth();
 console.log(dumpwday + dumpmonth)	
 }
 
+document.querySelector("#featured-3 > div > div:nth-child(1) > a > img").addEventListener("click",addTable1)
 
+function addTable1() {
+    document.querySelector("#featured-3 > div > div:nth-child(1) > a > img").outerHTML = 
+	"<table class=\"table\">\n" +
+        "  <thead class=\"thead-dark\">\n" +
+        "    <tr>\n" +
+        "      <th scope=\"col\">No.</th>\n" +
+        "      <th scope=\"col\">Description</th>\n" +
+        "      <th scope=\"col\">Status</th>\n" +
+        "      <th scope=\"col\">Date</th>\n" +
+        "    </tr>\n" +
+        "  </thead>\n" +
+        "  <tbody>\n" +
+        "    <tr>\n" +
+        "      <th scope=\"row\">1</th>\n" +
+        "      <td>Kombucha Continuous Brew</td>\n" +
+        "      <td>Week 1 of 5 Gallon</td>\n" +
+        "      <td>7/10/24</td>\n" +
+        "    </tr>\n" +
+        "    <tr>\n" +
+        "      <th scope=\"row\">2</th>\n" +
+        "      <td>Java Script Web Page</td>\n" +
+        "      <td>Continuous</td>\n" +
+        "      <td>6/26/24</td>\n" +
+        "    </tr>\n" +
+        "    <tr>\n" +
+        "      <th scope=\"row\">3</th>\n" +
+        "      <td>Keezer Build</td>\n" +
+        "      <td>Emptied and Thawed</td>\n" +
+        "      <td>Soon</td>\n" +
+        "    </tr>\n" +
+        "  </tbody>\n" +
+        "</table>";
+	
 
-document.querySelector("#featured-3 > div > div:nth-child(1) > a > img").addEventListener("click",addtable1)
-
-function addtable1() {
-document.querySelector("#featured-3 > div > div:nth-child(1) > a > img").outerHTML = 
-"
-<table class='table'>
-  <thead class='thead-dark'>
-    <tr>
-      <th scope='col'>#</th>
-      <th scope='col'>First</th>
-      <th scope='col'>Last</th>
-      <th scope='col'>Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope='row'>1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope='row'>2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope='row'>3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-"
 }
 
