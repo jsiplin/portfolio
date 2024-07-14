@@ -10,7 +10,9 @@ function setlight() {
 }
 
 function setdark() {
-	document.querySelector("html").setAttribute("data-bs-theme","dark")
+	document.querySelector("html").setAttribute("data-bs-theme","dark");
+	var vader = new Audio("media/sound/darkside.mp3");
+	vader.play();
 }
 
 
