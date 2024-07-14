@@ -18,9 +18,6 @@ function setdark() {
 }
 
 
-
-
-
 datesetup()
 
 document.querySelector("body > div.alert.alert-info").innerText = "Today is "+dumpwday+" "+dumpmonth+" "+dumpday+", "+dumpyear+"\n"+dumptime+" and we are now powered by JavaScript!\n";
@@ -72,3 +69,44 @@ fixwd();
 fixmonth();
 console.log(dumpwday + dumpmonth)	
 }
+
+
+
+document.querySelector("#featured-3 > div > div:nth-child(1) > a > img").addEventListener("click",addtable1)
+
+function addtable1() {
+document.querySelector("#featured-3 > div > div:nth-child(1) > a > img").outerHTML = 
+"
+<table class='table'>
+  <thead class='thead-dark'>
+    <tr>
+      <th scope='col'>#</th>
+      <th scope='col'>First</th>
+      <th scope='col'>Last</th>
+      <th scope='col'>Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope='row'>1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope='row'>2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope='row'>3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+"
+}
+
