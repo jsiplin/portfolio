@@ -20,7 +20,8 @@ function setdark() {
 
 datesetup()
 
-document.querySelector("body > div.alert.alert-info").innerText = "Today is "+dumpwday+" "+dumpmonth+" "+dumpday+", "+dumpyear+"\n"+dumptime+" and we are now powered by JavaScript!\n";
+document.querySelector("body > div.alert.alert-info").innerText = "Today is "+dumpwday+" "+dumpmonth+" "+dumpday+", "+dumpyear+"\n"+dumptime
+
 document.querySelector("body > button.btn.btn-primary").addEventListener("click",function() {
 	var chimessound = new Audio("media/sounds/Chimes.mp3");
 	chimessound.play();
