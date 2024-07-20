@@ -60,7 +60,7 @@ h1,h2,h3,li {
 }
 
 .flavgrid img{
-    dislay:flex;
+    display:flex;
     width: 100px;
     height: 100px;
     display: grid;
@@ -76,7 +76,7 @@ h1,h2,h3,li {
  }
 
  .topleft img{
-    dislay:flex;
+    display:flex;
     width: 350px;
     height: 350px;
     display: grid;
@@ -91,6 +91,18 @@ h1,h2,h3,li {
 background-color: #FFDA78;    
 }
 
+/* JQuery Classes */
+
 .blue {
     color:blue;
+}
+
+.fancy {
+    font-family: cursive;
+    text-decoration: underline black;
+}
+
+.dotborder {
+    border: 10px double red;
+
 }
