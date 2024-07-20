@@ -12,6 +12,6 @@ $(".expand-improve").click(function(){
             <li>This Drop Down</li>\
             <li><button>Collapse</button></li>\
         </ol>");
-        $("body > div.alert.alert-primary > ol > li:nth-child(13) > button").on
+        $("body > div.alert.alert-primary > ol > li > button").on
         ("click",function(){$("body > div.alert.alert-primary > ol").remove()});
 })
