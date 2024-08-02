@@ -13,5 +13,9 @@ $(".expand-improve").click(function(){
             <li><button>Collapse</button></li>\
         </ol>");
         $("body > div.alert.alert-primary > ol > li > button").on
-        ("click",function(){$("body > div.alert.alert-primary > ol").remove()});
+        ("click",function(){$("body > div.alert.alert-primary > ol").remove();console.log("clicked")});
 })
+
+
+console.log($(document).ready(()=>{$.getJSON("https://api.ipify.org?format=json",function (data) {
+        $("#gfg").html(data.ip);})}))
