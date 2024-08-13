@@ -20,7 +20,6 @@ function passwordCheck(req, res, next) {
   next();
 }
 
-app.use(express.static(path.join(__dirname, './js')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(passwordCheck);
 
