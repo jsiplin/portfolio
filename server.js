@@ -140,6 +140,12 @@ app.get("/passcheck", (req, res) => {
     console.log(__dirname + "/pages/passcheck.html")
     });
 
+app.get("/calendar", (req, res) => {
+  res.render("calendar.ejs", {
+
+  });
+  
+  });
 //app.get("/secret", (req, res) => {
 //    res.sendFile(__dirname + "/pages/secret/secret.html");
 //    console.log(__dirname + "/pages/secret/secret.html")
@@ -159,8 +165,6 @@ app.post("/submit", (req, res) => {
 app.listen(process.env.PORT || port, '0.0.0.0', () => {
   console.log("Server is running.");
 });
-
-
 
 
 
