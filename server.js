@@ -141,9 +141,9 @@ app.get("/passcheck", (req, res) => {
     });
 
 app.get("/calendar", (req, res) => {
-  res.render("calendar.ejs", {
+  //res.render("calendarBS.ejs", {});
+  res.sendFile(__dirname + "/pages/calendar.html");
 
-  });
   
   });
 //app.get("/secret", (req, res) => {
