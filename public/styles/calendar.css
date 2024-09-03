@@ -50,6 +50,24 @@ background-color: #f00;
 color: #fff;
 }
 
+#calendar-body div.production1 {
+    background-color: indigo;
+    color: #fff;
+    }
+
+#calendar-body div.production1 {
+    background-color: indigo;
+    color: #fff;
+    }
+#calendar-body div.tap1 {
+    background-color: violet;
+    color: #fff;
+    }
+
+#calendar-body div.distribute1 {
+    background-color: greenyellow;
+    color: #fff;
+    }
 .change-month {
 cursor: pointer;
 }

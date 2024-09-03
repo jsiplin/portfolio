@@ -64,12 +64,21 @@ function renderCalendar() {
     }
 
     for (let i = 1; i <= lastDay; i++) {
+        const production1 = [1,2,3,4];
+        const tap1 = [5];
+        const distribute1 = [7,8];
         if (
             i === new Date().getDate() &&
             date.getMonth() === new Date().getMonth() &&
             date.getFullYear() === new Date().getFullYear()
         ) {
-            dates += `<div class='today'>${i}</div>`;
+            dates += `<div class='today'>${i}\nToday</div>`;
+        } else if (production1.includes(i)){
+            dates += `<div class='production1'>${i}\nBREW\nBlkMnt</div>`;
+        } else if (tap1.includes(i)){
+            dates += `<div class='tap1'>${i}\n*TAP*\nBlkMnt</div>`;
+        } else if (distribute1.includes(i)){
+            dates += `<div class='distribute1'>${i}\nDisto\nBlkMnt</div>`;     
         } else {
             dates += `<div>${i}</div>`;
         }
