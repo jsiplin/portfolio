@@ -55,7 +55,7 @@ function renderCalendar() {
     ];
 
     month.innerText = `${months[date.getMonth()]} ${date.getFullYear()}`;
-    daysElement.innerHTML = days.map(day => `<div>${day}</div>`).join('');
+    daysElement.innerHTML = days.map(day => `<div class="daydiv">${day}</div>`).join('');
 
     let dates = '';
 
@@ -72,13 +72,13 @@ function renderCalendar() {
             date.getMonth() === new Date().getMonth() &&
             date.getFullYear() === new Date().getFullYear()
         ) {
-            dates += `<div class='today'>${i}\nToday</div>`;
+            dates += `<div class='today'>${i}<br>Today</div>`;
         } else if (production1.includes(i)){
-            dates += `<div class='production1'>${i}\nBREW\nBlkMnt</div>`;
+            dates += `<div class='production1'>${i}<br>BREW\nBlkMnt</div>`;
         } else if (tap1.includes(i)){
-            dates += `<div class='tap1'>${i}\n*TAP*\nBlkMnt</div>`;
+            dates += `<div class='tap1'>${i}<br>TAP\nBlkMnt</div>`;
         } else if (distribute1.includes(i)){
-            dates += `<div class='distribute1'>${i}\nDisto\nBlkMnt</div>`;     
+            dates += `<div class='distribute1'>${i}<br>Disto\nBlkMnt</div>`;     
         } else {
             dates += `<div>${i}</div>`;
         }
