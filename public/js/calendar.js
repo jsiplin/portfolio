@@ -124,10 +124,20 @@ function batchsetup() {
     // Define the batchlist
     let batchlist = {
         "Batches": [{
+            "batch": 101,
+            "month": "August",
+            "year": 2024,
+            "flavor": "Lemon/Blueberry/Ginger",
+            "rating": "9/10",
+            "ingreditents": "6/1Pint/0.25oz",
+            "production": [31],
+            "tap": [31],
+            "distribute": [31]
+        },{
             "batch": 102,
             "month": "September",
             "year": 2024,
-            "flavor": "Lemon/Blueberry/Ginger",
+            "flavor": "Blackberry/Mint",
             "rating": "9/10",
             "ingreditents": "6/1Pint/0.25oz",
             "production": [1, 2, 3, 4],
@@ -138,8 +148,11 @@ function batchsetup() {
             "batch": 103,
             "month": "September",
             "year": 2024,
-            "production": [9, 10, 11, 12],
-            "tap": [13],
+            "flavor": "Lemon/Ginger/Mint",
+            "rating": "TBD",
+            "ingreditents": "6ea/8oz/1oz",
+            "production": [9, 10, 11, 12, 13],
+            "tap": [14],
             "distribute": [15, 16]
         }]
   };
@@ -148,15 +161,25 @@ function batchsetup() {
   
     // Display the first batch elemetes in the "showme" paragraph
     
-        document.getElementById("showme").innerHTML = batchcalendar.Batches[0].batch + " - " 
-        +  batchcalendar.Batches[0].month + " - "
-        +  batchcalendar.Batches[0].year + " - "
-        +  batchcalendar.Batches[0].flavor + " - "
-        +  batchcalendar.Batches[0].ingreditents + " - "
-        +  batchcalendar.Batches[0].rating + " - "
-        +  batchcalendar.Batches[0].production + " - "
-        +  batchcalendar.Batches[0].tap + " - "
-        +  batchcalendar.Batches[0].distribute;
-    };
+    document.getElementById("batch102").innerHTML = batchcalendar.Batches[1].batch + " - " 
+        +  batchcalendar.Batches[1].month + " - "
+        +  batchcalendar.Batches[1].year + " - "
+        +  batchcalendar.Batches[1].flavor + " - "
+        +  batchcalendar.Batches[1].ingreditents + " - "
+        +  batchcalendar.Batches[1].rating + " - "
+        +  batchcalendar.Batches[1].production + " - "
+        +  batchcalendar.Batches[1].tap + " - "
+        +  batchcalendar.Batches[1].distribute;
+
+    document.getElementById("batch103").innerHTML = batchcalendar.Batches[2].batch + " - " 
+    +  batchcalendar.Batches[2].month + " - "
+    +  batchcalendar.Batches[2].year + " - "
+    +  batchcalendar.Batches[2].flavor + " - "
+    +  batchcalendar.Batches[2].ingreditents + " - "
+    +  batchcalendar.Batches[2].rating + " - "
+    +  batchcalendar.Batches[2].production + " - "
+    +  batchcalendar.Batches[2].tap + " - "
+    +  batchcalendar.Batches[2].distribute;
+};
 renderCalendar();
 batchsetup();
