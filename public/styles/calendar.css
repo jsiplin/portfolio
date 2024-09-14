@@ -67,13 +67,34 @@ border: 1px solid gray;
     padding-right: 0%;
     }
 
-#calendar-body div.distribute1 {
+#calendar-body div.distribute {
     background-color: greenyellow;
     color: black;
     padding-left: 0%;
     padding-right: 0%;
     }
+
+    #calendar-body div.production2 {
+        background-color: yellow;
+        color: black;
+        padding-left: 0%;
+        padding-right: 0%;
+        }
     
+    #calendar-body div.tap2 {
+        background-color: orange;
+        color: black;
+        padding-left: 0%;
+        padding-right: 0%;
+        }
+    
+    #calendar-body div.distribute {
+        background-color: greenyellow;
+        color: black;
+        padding-left: 0%;
+        padding-right: 0%;
+        }
+
 #calendar-body {
     display: grid;
     grid-template-columns: repeat(7, auto);

@@ -64,9 +64,13 @@ function renderCalendar() {
     }
 
     for (let i = 1; i <= lastDay; i++) {
+        
         const production1 = [1,2,3,4];
         const tap1 = [5];
         const distribute1 = [7,8];
+        const production2 = [9,10,11,12,13,14];
+        const tap2 = [15];
+        const distribute2 = [16,17];
         if (
             i === new Date().getDate() &&
             date.getMonth() === new Date().getMonth() &&
@@ -78,7 +82,13 @@ function renderCalendar() {
         } else if (tap1.includes(i)){
             dates += `<div class='tap1'>${i}<br>TAP\nBlkMnt</div>`;
         } else if (distribute1.includes(i)){
-            dates += `<div class='distribute1'>${i}<br>Disto\nBlkMnt</div>`;     
+            dates += `<div class='distribute'>${i}<br>Disto\nBlkMnt</div>`;
+        } else if (production2.includes(i)){
+            dates += `<div class='production2'>${i}<br>BREW\nLemGin</div>`;
+        } else if (tap2.includes(i)){
+            dates += `<div class='tap2'>${i}<br>TAP\nLemGin</div>`;
+        } else if (distribute2.includes(i)){
+            dates += `<div class='distribute'>${i}<br>Disto\nLemGin</div>`;      
         } else {
             dates += `<div>${i}</div>`;
         }
@@ -88,6 +98,7 @@ function renderCalendar() {
         dates += `<div class='next-date'>${j}</div>`;
     }
     monthDays.innerHTML = dates;
+   
 }
 
 document.getElementById('month-prev').addEventListener('click', () => {
@@ -106,6 +117,46 @@ document.getElementById('month-next').addEventListener('click', () => {
         renderCalendar();
         document.getElementById('calendar-body').classList.remove('fade-out');
     }, 500);
+
 });
 
+function batchsetup() {
+    // Define the batchlist
+    let batchlist = {
+        "Batches": [{
+            "batch": 102,
+            "month": "September",
+            "year": 2024,
+            "flavor": "Lemon/Blueberry/Ginger",
+            "rating": "9/10",
+            "ingreditents": "6/1Pint/0.25oz",
+            "production": [1, 2, 3, 4],
+            "tap": [5],
+            "distribute": [7, 8]
+        },
+        {
+            "batch": 103,
+            "month": "September",
+            "year": 2024,
+            "production": [9, 10, 11, 12],
+            "tap": [13],
+            "distribute": [15, 16]
+        }]
+  };
+    // Convert batchlist to JSON and parse it (not necessary unless receiving it as a string)
+    const batchcalendar = JSON.parse(JSON.stringify(batchlist));
+  
+    // Display the first batch elemetes in the "showme" paragraph
+    
+        document.getElementById("showme").innerHTML = batchcalendar.Batches[0].batch + " - " 
+        +  batchcalendar.Batches[0].month + " - "
+        +  batchcalendar.Batches[0].year + " - "
+        +  batchcalendar.Batches[0].flavor + " - "
+        +  batchcalendar.Batches[0].ingreditents + " - "
+        +  batchcalendar.Batches[0].rating + " - "
+        +  batchcalendar.Batches[0].production + " - "
+        +  batchcalendar.Batches[0].tap + " - "
+        +  batchcalendar.Batches[0].distribute;
+    };
 renderCalendar();
+batchsetup();
