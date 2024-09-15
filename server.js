@@ -14,12 +14,12 @@ var userIsAuthorised = false;
 
 function passwordCheck(req, res, next) {
   const password = req.body["password"];
-  console.log(req.body["password"])
+  //console.log(req.body["password"]);
    if (password === "ILoveProgramming") {
     userIsAuthorised = true;
-  }
+  };
   next();
-}
+};
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(passwordCheck);

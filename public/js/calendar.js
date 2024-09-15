@@ -1,6 +1,6 @@
 let date = new Date();
 
-function renderCalendar() {
+function renderCalendar(BatchObject) {
     date.setDate(1);
 
     const monthDays = document.getElementById('calendar-body');
@@ -65,12 +65,12 @@ function renderCalendar() {
 
     for (let i = 1; i <= lastDay; i++) {
         
-        const production1 = [1,2,3,4];
-        const tap1 = [5];
-        const distribute1 = [7,8];
-        const production2 = [9,10,11,12,13,14];
-        const tap2 = [15];
-        const distribute2 = [16,17];
+        const production1 = BatchObject.Batches[1].production;
+        const tap1 = BatchObject.Batches[1].tap;        
+        const distribute1 = BatchObject.Batches[1].distribute;
+        const production2 = BatchObject.Batches[2].production;
+        const tap2 = BatchObject.Batches[2].tap;
+        const distribute2 = BatchObject.Batches[2].distribute;
         if (
             i === new Date().getDate() &&
             date.getMonth() === new Date().getMonth() &&
@@ -152,16 +152,21 @@ function batchsetup() {
             "rating": "TBD",
             "ingreditents": "6ea/8oz/1oz",
             "production": [9, 10, 11, 12, 13],
-            "tap": [14],
-            "distribute": [15, 16]
+            "tap": [15],
+            "distribute": [16, 17]
         }]
   };
     // Convert batchlist to JSON and parse it (not necessary unless receiving it as a string)
-    const batchcalendar = JSON.parse(JSON.stringify(batchlist));
+const batchcalendar = JSON.parse(JSON.stringify(batchlist));
   
     // Display the first batch elemetes in the "showme" paragraph
-    
-    document.getElementById("batch102").innerHTML = batchcalendar.Batches[1].batch + " - " 
+
+const batchnumbers = ["batch101","batch102","batch103"];
+
+
+
+
+document.getElementById(batchnumbers[1]).innerHTML = batchcalendar.Batches[1].batch + " - " 
         +  batchcalendar.Batches[1].month + " - "
         +  batchcalendar.Batches[1].year + " - "
         +  batchcalendar.Batches[1].flavor + " - "
@@ -171,7 +176,7 @@ function batchsetup() {
         +  batchcalendar.Batches[1].tap + " - "
         +  batchcalendar.Batches[1].distribute;
 
-    document.getElementById("batch103").innerHTML = batchcalendar.Batches[2].batch + " - " 
+document.getElementById(batchnumbers[2]).innerHTML = batchcalendar.Batches[2].batch + " - " 
     +  batchcalendar.Batches[2].month + " - "
     +  batchcalendar.Batches[2].year + " - "
     +  batchcalendar.Batches[2].flavor + " - "
@@ -180,6 +185,8 @@ function batchsetup() {
     +  batchcalendar.Batches[2].production + " - "
     +  batchcalendar.Batches[2].tap + " - "
     +  batchcalendar.Batches[2].distribute;
+return(batchcalendar);
 };
-renderCalendar();
-batchsetup();
+
+passbatchobj = batchsetup();
+renderCalendar(passbatchobj);
