@@ -18,6 +18,9 @@ function setdark() {
 }
 
 
+
+
+
 datesetup()
 
 document.querySelector("body > div.alert.alert-info").innerText = "Today is "+dumpwday+" "+dumpmonth+" "+dumpday+", "+dumpyear+"\n"+dumptime

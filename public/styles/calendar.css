@@ -87,6 +87,18 @@ border: 1px solid gray;
         padding-left: 0%;
         padding-right: 0%;
         }
+    #calendar-body div.production3 {
+        background-color: orangered;
+        color: black;
+        padding-left: 0%;
+        padding-right: 0%;
+        }
+    #calendar-body div.tap3 {
+        background-color: darkred;
+        color: white;
+        padding-left: 0%;
+        padding-right: 0%;
+        }
     
     #calendar-body div.distribute {
         background-color: greenyellow;

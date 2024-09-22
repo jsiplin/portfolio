@@ -146,12 +146,17 @@ app.get("/calendar", (req, res) => {
 
   
   });
+
+app.get("/voting", (req, res) => {
+  res.render("voting.ejs", {});
+  //res.sendFile(__dirname + "/pages/calendar.html");
+
+  
+  });
 //app.get("/secret", (req, res) => {
 //    res.sendFile(__dirname + "/pages/secret/secret.html");
 //    console.log(__dirname + "/pages/secret/secret.html")
 //    });
-
-
 
 
 app.post("/submit", (req, res) => {
