@@ -25,11 +25,6 @@ datesetup()
 
 document.querySelector("body > div.alert.alert-info").innerText = "Today is "+dumpwday+" "+dumpmonth+" "+dumpday+", "+dumpyear+"\n"+dumptime
 
-document.querySelector("body > button.btn.btn-primary").addEventListener("click",function() {
-	var chimessound = new Audio("media/sounds/Chimes.mp3");
-	chimessound.play();
-	alert("Link Uptop in Menu 'Kombucha Project 2024'");
-})
 
 
 
@@ -72,43 +67,29 @@ function datesetup(){
 fixwd();
 fixmonth();
 console.log(dumpwday + dumpmonth)	
-}
+};
 
-document.querySelector("#featured-3 > div > div:nth-child(1) > a > img").addEventListener("click",addTable1)
+document.querySelector("#featured-3 > div > div:nth-child(1) > a > button").addEventListener("click",listprojects);
+document.querySelector("#services").addEventListener("click",itgetstarted);
 
-function addTable1() {
-    document.querySelector("#featured-3 > div > div:nth-child(1) > a > img").outerHTML = 
-	"<table class=\"table\">\n" +
-        "  <thead class=\"thead-dark\">\n" +
-        "    <tr>\n" +
-        "      <th scope=\"col\">No.</th>\n" +
-        "      <th scope=\"col\">Description</th>\n" +
-        "      <th scope=\"col\">Status</th>\n" +
-        "      <th scope=\"col\">Date</th>\n" +
-        "    </tr>\n" +
-        "  </thead>\n" +
-        "  <tbody>\n" +
-        "    <tr>\n" +
-        "      <th scope=\"row\">1</th>\n" +
-        "      <td>Kombucha Continuous Brew</td>\n" +
-        "      <td>Week 1 of 5 Gallon</td>\n" +
-        "      <td>7/10/24</td>\n" +
-        "    </tr>\n" +
-        "    <tr>\n" +
-        "      <th scope=\"row\">2</th>\n" +
-        "      <td>Java Script Web Page</td>\n" +
-        "      <td>Continuous</td>\n" +
-        "      <td>6/26/24</td>\n" +
-        "    </tr>\n" +
-        "    <tr>\n" +
-        "      <th scope=\"row\">3</th>\n" +
-        "      <td>Keezer Build</td>\n" +
-        "      <td>Emptied and Thawed</td>\n" +
-        "      <td>Soon</td>\n" +
-        "    </tr>\n" +
-        "  </tbody>\n" +
-        "</table>";
-	
 
-}
+function listprojects() {
+	var focuslist = ["Voting Page", "Pricing Page for Bottles", "Coupon Page", "Work on Kombucha Page"];
+	var str = '<ul style="list-style: none; text-align:left">';
+	focuslist.forEach(function(focuslist) {
+		str += '<li>'+ focuslist + '</li>';
+	});
+	str += '</ul>';
+    document.querySelector("#featured-3 > div > div:nth-child(1) > a > button").innerHTML = str;
+};
 
+function itgetstarted() {
+	var itlist = ["Get Free Advice", "Learn Something New", "Make your Procces Easier", "Get Expert IT Help"];
+	var itstr = '<ul style="list-style: none; text-align:left">';
+	itlist.forEach(function(itlist) {
+		itstr += '<li>'+ itlist + '</li>';
+	});
+	itstr += '</ul>';
+	document.querySelector("#services").innerHTML = itstr;
+
+};
