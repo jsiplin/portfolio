@@ -11,6 +11,8 @@
   "author": "Siplin",
   "license": "ISC",
   "dependencies": {
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
     "body-parser": "^1.20.2",
     "ejs": "^3.1.10",
     "express": "^4.19.2"

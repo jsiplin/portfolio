@@ -2,6 +2,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import { Calendar } from '@fullcalendar/core';
+import dayGridPlugin from '@fullcalendar/daygrid';
+
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -141,7 +144,7 @@ app.get("/passcheck", (req, res) => {
     });
 
 app.get("/calendar", (req, res) => {
-  res.render("calendarBS.ejs", {});
+  res.render("calendarscrap.ejs", {});
   //res.sendFile(__dirname + "/pages/calendar.html");
 
   
@@ -150,9 +153,13 @@ app.get("/calendar", (req, res) => {
 app.get("/voting", (req, res) => {
   res.render("voting.ejs", {});
   //res.sendFile(__dirname + "/pages/calendar.html");
-
-  
   });
+
+app.get("/calendarscrap", (req, res) => {
+  res.render("calendarscrap.ejs", {});
+  //res.sendFile(__dirname + "/pages/calendar.html");
+  });
+
 //app.get("/secret", (req, res) => {
 //    res.sendFile(__dirname + "/pages/secret/secret.html");
 //    console.log(__dirname + "/pages/secret/secret.html")
