@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         right: 'dayGridMonth,timeGridWeek,timeGridDay'
       },
       events: [
+
         {
           title: 'Brewing Mango',
           start: '2024-09-19',
@@ -78,10 +79,34 @@ document.addEventListener('DOMContentLoaded', function() {
         },
 
         {
-          title: 'Click for Google',
-          url: 'https://google.com/',
-          start: '2024-09-30'
-        }
+          title: 'Back Home',
+          url: 'http://www.sipofbooch.com',
+          start: '2024-11-01'
+        },
+
+        
+        {
+            title: 'Brewing Apple (KJP)',
+            start: '2024-09-29',
+            end: '2024-10-03',
+            color: 'red',
+            textColor: 'white'
+  
+          },
+
+        {
+          title: 'Tap Apple',
+          start: '2024-10-03',
+          color: 'crimson'
+        },
+
+        {
+            title: 'Distro Apple',
+            start: '2024-10-04',
+            end: '2024-10-08',
+            color: 'greenyellow',
+            textColor: 'black'
+          }
       ]
     });
   
