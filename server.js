@@ -160,6 +160,11 @@ app.get("/calendarscrap", (req, res) => {
   //res.sendFile(__dirname + "/pages/calendar.html");
   });
 
+app.get("/batches", (req, res) => {
+  res.render("batches.ejs", {});
+  //res.sendFile(__dirname + "/pages/calendar.html");
+  });
+
 //app.get("/secret", (req, res) => {
 //    res.sendFile(__dirname + "/pages/secret/secret.html");
 //    console.log(__dirname + "/pages/secret/secret.html")

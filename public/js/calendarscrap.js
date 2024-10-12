@@ -1,15 +1,11 @@
+function printbatches() {
+    document.querySelector("BATCHES").innerHTML = "Lets Make Sure this even works";
+  };
+
+
 document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
-  
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth',
-      initialDate: '2024-09-01',
-      headerToolbar: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay'
-      },
-      events: [
+    let allevents = [
 
         {
           title: 'Brewing Mango',
@@ -87,8 +83,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         {
             title: 'Brewing Apple (KJP)',
-            start: '2024-09-29',
-            end: '2024-10-03',
+            start: '2024-09-30',
+            end: '2024-10-10',
             color: 'red',
             textColor: 'white'
   
@@ -96,19 +92,55 @@ document.addEventListener('DOMContentLoaded', function() {
 
         {
           title: 'Tap Apple',
-          start: '2024-10-03',
+          start: '2024-10-10',
           color: 'crimson'
         },
 
         {
             title: 'Distro Apple',
-            start: '2024-10-04',
-            end: '2024-10-08',
+            start: '2024-10-11',
+            end: '2024-10-14',
+            color: 'greenyellow',
+            textColor: 'black'
+          },
+          {
+            title: 'Brewing Raspberry Ginger (MP) Likely Extra Week',
+            start: '2024-10-14',
+            end: '2024-10-17',
+            color: 'pink',
+            textColor: 'black'
+  
+          },
+
+        {
+          title: 'Tap Raspberry Ginger',
+          start: '2024-10-17',
+          color: 'orange',
+          textColor: 'black'
+        },
+
+        {
+            title: 'Distro Raspbery Ginger',
+            start: '2024-10-18',
+            end: '2024-10-21',
             color: 'greenyellow',
             textColor: 'black'
           }
-      ]
+      ];
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      initialDate: '2024-10-01',
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+      },
+      events: allevents
     });
   
     calendar.render();
+    printbatches();
+    
   });
+
+
