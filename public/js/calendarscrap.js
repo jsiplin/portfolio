@@ -77,9 +77,8 @@ document.addEventListener('DOMContentLoaded', function() {
         {
           title: 'Back Home',
           url: 'http://www.sipofbooch.com',
-          start: '2024-11-01'
+          start: '2024-11-30'
         },
-
         
         {
             title: 'Brewing Apple (KJP)',
@@ -106,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
           {
             title: 'Brewing Raspberry Ginger (MP) Likely Extra Week',
             start: '2024-10-14',
-            end: '2024-10-17',
+            end: '2024-10-25',
             color: 'pink',
             textColor: 'black'
   
@@ -114,22 +113,48 @@ document.addEventListener('DOMContentLoaded', function() {
 
         {
           title: 'Tap Raspberry Ginger',
-          start: '2024-10-17',
+          start: '2024-10-25',
           color: 'orange',
           textColor: 'black'
         },
 
         {
             title: 'Distro Raspbery Ginger',
-            start: '2024-10-18',
-            end: '2024-10-21',
+            start: '2024-10-26',
+            end: '2024-11-03',
+            color: 'greenyellow',
+            textColor: 'black'
+          },
+
+          {
+            title: 'Brewing Pineapple Clemintine 5 Gallon',
+            start: '2024-11-07',
+            end: '2024-11-14',
+            color: 'Yellow',
+            textColor: 'black'
+  
+          },
+
+        {
+          title: 'Tap Pineapple Clemintine',
+          start: '2024-11-14',
+          color: 'Orange',
+          textColor: 'black'
+        },
+
+        {
+            title: 'Distro Pineapple Clementine',
+            start: '2024-11-15',
+            end: '2024-11-20',
             color: 'greenyellow',
             textColor: 'black'
           }
+
+
       ];
     var calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: 'dayGridMonth',
-      initialDate: '2024-10-01',
+      initialDate: '2024-11-01',
       headerToolbar: {
         left: 'prev,next today',
         center: 'title',
