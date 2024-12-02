@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
           title: 'Back Home',
           url: 'http://www.sipofbooch.com',
-          start: '2024-11-30'
+          start: '2024-12-31'
         },
         
         {
@@ -148,13 +148,37 @@ document.addEventListener('DOMContentLoaded', function() {
             end: '2024-11-20',
             color: 'greenyellow',
             textColor: 'black'
+          },
+          
+          {
+            title: 'Brewing Strawberry Basil 5 Gallon',
+            start: '2024-11-20',
+            end: '2024-12-05',
+            color: 'Pink',
+            textColor: 'black'
+  
+          },
+
+        {
+          title: 'Tap Strawberry Basil',
+          start: '2024-12-05',
+          color: 'Red',
+          textColor: 'black'
+        },
+
+        {
+            title: 'Distro Strawberry Basil',
+            start: '2024-12-06',
+            end: '2024-12-12',
+            color: 'greenyellow',
+            textColor: 'black'
           }
 
 
       ];
     var calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: 'dayGridMonth',
-      initialDate: '2024-11-01',
+      initialDate: '2024-12-01',
       headerToolbar: {
         left: 'prev,next today',
         center: 'title',
