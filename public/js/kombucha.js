@@ -1,4 +1,4 @@
-$("h1,h2,h3,li").addClass("blue");
+$("h1,h2,h3,li").addClass("black");
 $("p").addClass("fancy");
 
 $(".expand-improve").click(function(){

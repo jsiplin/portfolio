@@ -1,7 +1,7 @@
 
 
 body {
-    background-color:#FF7F3E !important;
+    background-color:#ABCDC5 !important;
 }  
 
 body > div.container > div img {
@@ -95,6 +95,9 @@ background-color: #FFDA78;
 
 .blue {
     color:blue;
+}
+.black {
+    color:black;
 }
 
 .fancy {
