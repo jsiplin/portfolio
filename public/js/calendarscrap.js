@@ -172,6 +172,14 @@ document.addEventListener('DOMContentLoaded', function() {
             end: '2024-12-12',
             color: 'greenyellow',
             textColor: 'black'
+          },
+
+        {
+            title: 'Holiday Break',
+            start: '2024-12-12',
+            end: '2025-01-01',
+            color: 'black',
+            textColor: 'white'
           }
 
 
