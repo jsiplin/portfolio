@@ -150,6 +150,10 @@ app.get("/calendar", (req, res) => {
   
   });
 
+app.get("/moderntech", (req, res) => {
+  res.sendFile(__dirname + "/pages/moderntech.html");  
+  });
+
 app.get("/voting", (req, res) => {
   res.render("voting.ejs", {});
   //res.sendFile(__dirname + "/pages/calendar.html");

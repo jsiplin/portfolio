@@ -1,0 +1,109 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e2a47, #2c3e50); /* Dark tech background */
+    color: #ecf0f1;
+}
+
+/* Header Styles */
+header {
+    background-color: #2980b9; /* Tech blue color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Content Styles */
+main {
+    padding: 30px;
+    line-height: 1.8;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* Darkened background for sections */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography Styling */
+h1, h2, h3, h4 {
+    color: #f39c12; /* Bright tech-yellow */
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+}
+
+ul li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #f39c12; /* Bright tech-yellow bullets */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #34495e; /* Dark footer color */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Paragraph and Text Styling */
+p {
+    margin: 0 0 20px;
+}
+
+strong {
+    color: #e74c3c; /* Bold red for emphasis */
+}
+
+/* Page Breaks */
+@media print {
+    body {
+        background: none;
+        color: #000;
+    }
+
+    section {
+        page-break-after: always;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
