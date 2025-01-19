@@ -150,8 +150,8 @@ app.get("/calendar", (req, res) => {
   
   });
 
-app.get("/MT", (req, res) => {
-  res.sendFile(__dirname + "/pages/moderntech.html");  
+app.get("/mt", (req, res) => {
+  res.sendFile(__dirname + "/pages/mt");  
   });
 
 app.get("/voting", (req, res) => {
