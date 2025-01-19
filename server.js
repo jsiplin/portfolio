@@ -151,7 +151,7 @@ app.get("/calendar", (req, res) => {
   });
 
 app.get("/mt", (req, res) => {
-  res.sendFile(__dirname + "/pages/mt");  
+  res.sendFile(__dirname + "/pages/mt.html");  
   });
 
 app.get("/voting", (req, res) => {
