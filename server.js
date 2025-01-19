@@ -150,6 +150,10 @@ app.get("/calendar", (req, res) => {
   
   });
 
+app.get("/currentopening", (req, res) => {
+    res.sendFile(__dirname + "/pages/securityspecialist.html");  
+    }); 
+
 app.get("/mt", (req, res) => {
   res.sendFile(__dirname + "/pages/mt.html");  
   });
