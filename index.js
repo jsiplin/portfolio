@@ -45,6 +45,10 @@ app.get("/kombucha", (req, res) => {
   console.log(__dirname + "/pages/kombucha.html")
   });
 
+app.get("/kombucha2", (req, res) => {
+  res.sendFile(__dirname + "/pages/kombucha2.html");
+  console.log(__dirname + "/pages/kombucha2.html")
+  });
 
 app.get("/resume", (req, res) => {
     res.sendFile(__dirname + "/pages/resume.html");
