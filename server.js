@@ -154,6 +154,13 @@ app.get("/calendar", (req, res) => {
   
   });
 
+  app.get("/thankyou", (req, res) => {
+    res.render("calendarscrap.ejs", {});
+    //res.sendFile(__dirname + "/pages/calendar.html");
+  
+    
+    });
+
 app.get("/currentopening", (req, res) => {
     res.sendFile(__dirname + "/pages/securityspecialist.html");  
     }); 
