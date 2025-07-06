@@ -34,6 +34,7 @@ document.querySelector("body > div.flex-art-container > div:nth-child(1) > img")
 document.querySelector("body > div.flex-art-container > div:nth-child(3) > img").addEventListener(
 		"click", gongit)
 
+
 function gongit() {
 	var gongsound = new Audio("media/sounds/zildjian_gong.mp3");
 	gongsound.play();
