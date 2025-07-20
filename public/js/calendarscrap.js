@@ -7,6 +7,20 @@ document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
     let allevents = [
 
+          { title:'Distribute Blue Lemon Ginger',start:'2025-07-19',end:'2025-08-09',color:'blue',textColor:'yellow'},
+          { title:'Distribute Pineapple Clementine',start:'2025-08-01',end:'2025-08-18',color:'orange',textColor:'yellow'},
+          {
+            title: 'Back Home',
+            url: 'http://www.sipofbooch.com',
+            start: '2025-07-31'
+          },
+          
+          {
+            title: 'Back Home',
+            url: 'http://www.sipofbooch.com',
+            start: '2025-07-31'
+          },
+
           { title:'Distribute Mango Lime',start:'2025-07-08',end:'2025-07-22',color:'orangered',textColor:'green'},
           {
             title: 'Back Home',
