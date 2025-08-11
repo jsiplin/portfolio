@@ -147,6 +147,11 @@ app.get("/passcheck", (req, res) => {
     console.log(__dirname + "/pages/passcheck.html")
     });
 
+app.get("/bb", (req, res) => {
+    res.sendFile(__dirname + "/pages/bigboy.html");
+    console.log(__dirname + "/pages/bigboy.html")
+    });
+
 app.get("/calendar", (req, res) => {
   res.render("calendarscrap.ejs", {});
   //res.sendFile(__dirname + "/pages/calendar.html");
