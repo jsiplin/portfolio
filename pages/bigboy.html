@@ -3,107 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>14-Photo Gallery (178 x 89 mm) — Vertical List</title>
-  <style>
-    :root{
-      --photo-w: 178mm;
-      --photo-h: 89mm;
-      --gap: 12px;
-      --card-bg: #ffffff;
-      --page-pad: 18px;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color: #111;
-    }
-    html,body{
-      height:100%;
-      margin:0;
-      background:#ACCDC6;
-    }
-    .container{
-      max-width:1200px;
-      margin:24px auto;
-      padding:var(--page-pad);
-    }
-    header{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      margin-bottom:18px;
-    }
-    header h1{font-size:1.125rem;margin:0}
-    .controls{font-size:0.9rem}
+  <link rel="stylesheet" href="../styles/kombucha.css">
+  <title>Big Boy Bottles!</title>
 
-    /* Vertical, non-overlapping list from top to bottom */
-    .gallery{
-      display:flex;
-      flex-direction:column;
-      gap:var(--gap);
-      align-items:center; /* center each card horizontally */
-    }
-
-    .card{
-      background:var(--card-bg);
-      border-radius:10px;
-      padding:10px;
-      box-shadow:0 6px 18px rgba(16,24,40,0.06);
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      width:100%;
-      max-width: var(--photo-w);
-      box-sizing:border-box;
-      margin:0; /* spacing handled by .gallery gap */
-    }
-
-    .photo-wrap{
-      width:var(--photo-w);
-      height:var(--photo-h);
-      background:#eee;
-      border-radius:6px;
-      overflow:hidden;
-      display:block;
-      margin-bottom:8px;
-      box-shadow:inset 0 0 0 1px rgba(0,0,0,0.04);
-    }
-
-    .photo-wrap img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
-    }
-
-    .title{font-weight:600;margin:6px 0 4px 0;font-size:0.95rem;text-align:center}
-    .caption{margin:0;font-size:0.85rem;color:#444;text-align:center}
-
-    /* Print: keep mm sizing and list layout */
-    @media print{
-      body{background:transparent}
-      .container{max-width:unset;padding:6mm}
-      .card{box-shadow:none;border-radius:0;padding:4mm}
-      .gallery{gap:6mm}
-      .photo-wrap{width:var(--photo-w);height:var(--photo-h)}
-    }
-
-    /* Responsive: on smaller screens make images fluid and keep vertical stacking */
-    @media (max-width: 900px){
-      .card{max-width: calc(100% - 48px);} /* keep some page padding */
-      .photo-wrap{width:100%;height:auto}
-      .photo-wrap img{height:auto}
-    }
-    @media (max-width: 520px){
-      .container{padding:12px}
-      .card{max-width:100%}
-      .photo-wrap{width:100%;height:auto}
-    }
-  </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>48 oz Bottle Nutritional Ingredients</h1>
-      <div class="controls">Same Booch Flavor in Bigger Booch Bottles (please recycle/return)</div>
+      <h1>Same Booch Flavor in Bigger Booch Bottles (please recycle/return) to Overlea Farmers Market</h1>
+      <div class="controls">48 oz Bottle Nutritional Ingredients</div>
     </header>
 
     <main class="gallery">
@@ -116,79 +24,79 @@
       <article class="card">
         <div class="photo-wrap"><img src="../media/bouch/labels/bb/bbBM.jpeg" alt="Blackbery Mint"></div>
         <h3 class="title">Blackbery Mint</h3>
-        <p class="caption">Caption for Blackbery Mint.</p>
+        <p class="caption">Big Boy is 48 ounce (4 servings) of Blackbery Mint.</p>
       </article>
 
       <article class="card">
         <div class="photo-wrap"><img src="../media/bouch/labels/bb/bbC.jpeg" alt="Clementine"></div>
         <h3 class="title">Clementine</h3>
-        <p class="caption">Caption for Clementine.</p>
+        <p class="caption">Big Boy is 48 ounce (4 servings) of Clementine.</p>
       </article>
 
       <article class="card">
         <div class="photo-wrap"><img src="../media/bouch/labels/bb/bbG.jpeg" alt="Ginger"></div>
         <h3 class="title">Ginger</h3>
-        <p class="caption">Caption for Ginger.</p>
+        <p class="caption">Big Boy is 48 ounce (4 servings) of Ginger.</p>
       </article>
 
       <article class="card">
         <div class="photo-wrap"><img src="../media/bouch/labels/bb/bbLG.jpeg" alt="Lemon Ginger"></div>
         <h3 class="title">Lemon Ginger</h3>
-        <p class="caption">Caption for Lemon Ginger.</p>
+        <p class="caption">Big Boy is 48 ounce (4 servings) of Lemon Ginger.</p>
       </article>
 
       <article class="card">
         <div class="photo-wrap"><img src="../media/bouch/labels/bb/bbM.jpeg" alt="Mango"></div>
         <h3 class="title">Mango</h3>
-        <p class="caption">Caption for Mango.</p>
+        <p class="caption">Big Boy is 48 ounce (4 servings) of Mango.</p>
       </article>
 
       <article class="card">
         <div class="photo-wrap"><img src="../media/bouch/labels/bb/bbMH.jpeg" alt="Mango Habenaro"></div>
         <h3 class="title">Mango Habenaro</h3>
-        <p class="caption">Caption for Mango Habenaro.</p>
+        <p class="caption">Big Boy is 48 ounce (4 servings) of Mango Habenaro.</p>
       </article>
 
       <article class="card">
         <div class="photo-wrap"><img src="../media/bouch/labels/bb/bbML.jpeg" alt="Mango Lime"></div>
         <h3 class="title">Mango Lime</h3>
-        <p class="caption">Caption for Mango Lime.</p>
+        <p class="caption">Big Boy is 48 ounce (4 servings) of Mango Lime.</p>
       </article>
 
       <article class="card">
         <div class="photo-wrap"><img src="../media/bouch/labels/bb/bbPC.jpeg" alt="Pineapple Clementine"></div>
         <h3 class="title">Pineapple Clementine</h3>
-        <p class="caption">Caption for Pineapple Clementine.</p>
+        <p class="caption">Big Boy is 48 ounce (4 servings) of Pineapple Clementine.</p>
       </article>
 
       <article class="card">
         <div class="photo-wrap"><img src="../media/bouch/labels/bb/bbPG.jpeg" alt="Pineapple Ginger"></div>
         <h3 class="title">Pineapple Ginger</h3>
-        <p class="caption">Caption for Pineapple Ginger.</p>
+        <p class="caption">Big Boy is 48 ounce (4 servings) of Pineapple Ginger.</p>
       </article>
 
       <article class="card">
         <div class="photo-wrap"><img src="../media/bouch/labels/bb/bbRG.jpeg" alt="Raspberry Ginger"></div>
         <h3 class="title">Raspberry Ginger</h3>
-        <p class="caption">Caption for Raspberry Ginger.</p>
+        <p class="caption">Big Boy is 48 ounce (4 servings) of Raspberry Ginger.</p>
       </article>
 
       <article class="card">
         <div class="photo-wrap"><img src="../media/bouch/labels/bb/bbRM.jpeg" alt="Raspberry Mint"></div>
         <h3 class="title">Raspberry Mint</h3>
-        <p class="caption">Caption for Raspberry Mint.</p>
+        <p class="caption">Big Boy is 48 ounce (4 servings) of Raspberry Mint.</p>
       </article>
 
       <article class="card">
         <div class="photo-wrap"><img src="../media/bouch/labels/bb/bbSB.jpeg" alt="Strawberry Basil"></div>
         <h3 class="title">Strawberry Basil</h3>
-        <p class="caption">Caption for Strawberry Basil.</p>
+        <p class="caption">Big Boy is 48 ounce (4 servings) of Strawberry Basil.</p>
       </article>
 
       <article class="card">
         <div class="photo-wrap"><img src="../media/bouch/labels/bb/bbSJ.jpeg" alt="Strawberry Jalapeno"></div>
         <h3 class="title">Strawberry Jalapeno</h3>
-        <p class="caption">Caption for Strawberry Jalapeno.</p>
+        <p class="caption">Big Boy is 48 ounce (4 servings) of Strawberry Jalapeno.</p>
       </article>
 
     </main>

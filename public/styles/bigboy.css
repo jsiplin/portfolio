@@ -1,0 +1,92 @@
+:root{
+  --photo-w: 178mm;
+  --photo-h: 89mm;
+  --gap: 12px;
+  --card-bg: #ffffff;
+  --page-pad: 18px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #111;
+}
+html,body{
+  height:100%;
+  margin:0;
+  background:#ACCDC6;
+}
+.container{
+  max-width:1200px;
+  margin:24px auto;
+  padding:var(--page-pad);
+}
+header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:18px;
+}
+header h1{font-size:1.125rem;margin:0}
+.controls{font-size:0.9rem}
+
+/* Vertical, non-overlapping list from top to bottom */
+.gallery{
+  display:flex;
+  flex-direction:column;
+  gap:var(--gap);
+  align-items:center; /* center each card horizontally */
+}
+
+.card{
+  background:var(--card-bg);
+  border-radius:10px;
+  padding:10px;
+  box-shadow:0 6px 18px rgba(16,24,40,0.06);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:100%;
+  max-width: var(--photo-w);
+  box-sizing:border-box;
+  margin:0; /* spacing handled by .gallery gap */
+}
+
+.photo-wrap{
+  width:var(--photo-w);
+  height:var(--photo-h);
+  background:#eee;
+  border-radius:6px;
+  overflow:hidden;
+  display:block;
+  margin-bottom:8px;
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,0.04);
+}
+
+.photo-wrap img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.title{font-weight:600;margin:6px 0 4px 0;font-size:0.95rem;text-align:center}
+.caption{margin:0;font-size:0.85rem;color:#444;text-align:center}
+
+/* Print: keep mm sizing and list layout */
+@media print{
+  body{background:transparent}
+  .container{max-width:unset;padding:6mm}
+  .card{box-shadow:none;border-radius:0;padding:4mm}
+  .gallery{gap:6mm}
+  .photo-wrap{width:var(--photo-w);height:var(--photo-h)}
+}
+
+/* Responsive: on smaller screens make images fluid and keep vertical stacking */
+@media (max-width: 900px){
+  .card{max-width: calc(100% - 48px);} /* keep some page padding */
+  .photo-wrap{width:100%;height:auto}
+  .photo-wrap img{height:auto}
+}
+@media (max-width: 520px){
+  .container{padding:12px}
+  .card{max-width:100%}
+  .photo-wrap{width:100%;height:auto}
+}
