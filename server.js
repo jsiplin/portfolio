@@ -137,6 +137,11 @@ app.get("/resume", (req, res) => {
     console.log(__dirname + "/pages/resume.html")
     });
 
+app.get("/resume2", (req, res) => {
+    res.sendFile(__dirname + "/pages/resumebak.html");
+    console.log(__dirname + "/pages/resumebak.html")
+    });
+
 app.get("/offerings", (req, res) => {
     res.sendFile(__dirname + "/pages/offerings.html");
     console.log(__dirname + "/pages/offerings.html")
