@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
     let allevents = [
 
+          { title:'Distribute Lemon Ginger',start:'2026-02-16',end:'2026-02-28',color:'gold',textColor:'black'},
+          { title:'Distribute Strawberry Jalapeno',start:'2026-02-14',end:'2026-02-28',color:'red',textColor:'green'},
+
+
           { title:'Distribute Strawbery Jalapeno',start:'2025-09-05',end:'2025-09-14',color:'red',textColor:'green'},
           { title:'Distribute Mango',start:'2025-09-10',end:'2025-09-20',color:'orange',textColor:'black'},
           { title:'Distribute Golden Beet Ginger',start:'2025-08-30',end:'2025-09-05',color:'pink',textColor:'black'},
